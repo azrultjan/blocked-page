@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akses Dilarang</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ff4444;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #ffd700;
+        }
+        .message {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #ffd700;
+            margin: 20px 0;
+        }
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 24px 0;
+        }
+        .step {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .step.active {
+            background: #ffd700;
+            color: #000;
+        }
+        .footer {
+            margin-top: 24px;
+            font-size: 14px;
+            color: #666;
+        }
+        .brand {
+            color: #ffd700;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">⚠️</div>
+        <h1>Peringatan 1</h1>
+        
+        <div class="steps">
+            <div class="step active">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+        </div>
+
+        <div class="message">
+            <p><strong>Akses situs terlarang terdeteksi</strong></p>
+            <p style="margin-top: 8px; font-size: 14px; color: #ccc;">
+                Ini peringatan pertama. Percobaan berikutnya akan menyebabkan pemblokiran.
+            </p>
+        </div>
+
+        <div class="footer">
+            <span class="brand">Creative Geek Network</span>
+        </div>
+    </div>
+</body>
+</html>
